@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+import { AmexioWidgetModule, CommonHttpService } from 'amexio-ng-extensions';
 
 import { AppComponent } from './app.component';
 
@@ -8,9 +11,11 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    AmexioWidgetModule
   ],
-  providers: [],
+  providers: [CommonHttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
