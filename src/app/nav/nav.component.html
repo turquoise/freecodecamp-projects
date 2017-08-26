@@ -1,0 +1,73 @@
+<!-- <md-toolbar color="primary">
+<button md-icon-button [mdMenuTriggerFor]="menu">
+  <md-icon>more_vert</md-icon>
+</button>
+<md-menu #menu="mdMenu">
+  <button md-menu-item>
+    <span>Home</span>
+  </button>
+  <button md-menu-item>
+    <span>Markdown Previewer</span>
+  </button>
+  <button md-menu-item>
+    <span>Camper Leaderboard</span>
+  </button>
+  <button md-menu-item>
+    <span>Recipe Box</span>
+  </button>
+  <button md-menu-item>
+    <span>Game of Life</span>
+  </button>
+  <button md-menu-item>
+    <span>Dungeon Crawler</span>
+  </button>
+</md-menu>
+  <span>Home</span>
+  <span>Markdown Previewer</span>
+  <span>Camper Leaderboard</span>
+  <span>Recipe Box</span>
+  <span>Game of Life</span>
+  <span>Dungeon Crawler</span>
+</md-toolbar> -->
+<div class="container">
+<md-sidenav-container class="sidenav-container">
+
+  <md-sidenav class="sidenav" #sidenav mode="over" opened="true">
+    <button md-icon-button class="example-fab" (click)="sidenav.toggle()">
+      <md-icon>dehaze</md-icon>
+    </button>
+    <div class="example-content">
+      <div class="item">Home</div>
+      <div class="item">Markdown Previewer</div>
+      <div class="item">Camper Leaderboard</div>
+      <div class="item">Recipe Box</div>
+      <div class="item">Game of Life</div>
+      <div class="item">Dungeon Crawler</div>
+    </div>
+  </md-sidenav>
+    <div class="navcontent">
+
+      <div class="group">
+        <button md-icon-button class="example-fab" (click)="sidenav.toggle()">
+          <md-icon>dehaze</md-icon>
+        </button>
+        <span class="fill-remaining-space"></span>
+        <span fxShow="false" fxShow.gt-sm>Home</span>
+        <span fxShow="false" fxShow.gt-sm>Markdown Previewer</span>
+        <span fxShow="false" fxShow.gt-sm>Camper Leaderboard</span>
+        <span fxShow="false" fxShow.gt-sm>Recipe Box</span>
+        <span fxShow="false" fxShow.gt-sm>Game of Life</span>
+        <span fxShow="false" fxShow.gt-sm>Dungeon Crawler</span>    
+      </div>
+
+    </div>
+    <div class="content">
+      <div class="main">
+        <div class="main-content">
+          <h1>Hello</h1>
+          <!-- <router-outlet></router-outlet> -->
+        </div>
+      </div>
+    </div>
+</md-sidenav-container>
+</div>
